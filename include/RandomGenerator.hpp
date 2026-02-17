@@ -4,7 +4,7 @@
 class RandomGenerator{
 
     public:
-        explicit RandomGenerator(unsigned int seed = std::random_device{}()): engine_(seed) {}
+        explicit RandomGenerator() = default;
         virtual ~RandomGenerator() = default;
 
         virtual double Generate() = 0;
@@ -13,9 +13,5 @@ class RandomGenerator{
 
         double Variance(unsigned long nbSim);
 
-        
-
-    protected:
-        std::mt19937 engine_;
-
+    
 };
