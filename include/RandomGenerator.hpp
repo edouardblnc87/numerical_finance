@@ -9,7 +9,11 @@ class RandomGenerator{
 
         virtual double Generate() = 0;
 
-        virtual double Mean(unsigned long nbSim)  = 0;
+        double Mean(unsigned long nbSim);
+
+        double Variance(unsigned long nbSim);
+
+        
 
     protected:
         std::mt19937 engine_;

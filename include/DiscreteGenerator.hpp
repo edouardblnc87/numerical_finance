@@ -8,6 +8,4 @@ class DiscreteGenerator : public RandomGenerator{
         using RandomGenerator::RandomGenerator;
         virtual ~DiscreteGenerator() = default;
 
-        double Mean(unsigned long nbSim) override;
-
 };
