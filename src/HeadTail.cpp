@@ -1,7 +1,6 @@
 # include "../include/HeadTail.hpp"
 
 
-
 double HeadTail::Generate(){
     double u = dist_(engine_);  
     if (u < 0.5)
